@@ -13,6 +13,7 @@ public class Calculator extends javax.swing.JFrame {
     /**
      * Creates new form Calculator
      */
+    public String input ="";
     public Calculator() {
         initComponents();
     }
@@ -59,16 +60,46 @@ public class Calculator extends javax.swing.JFrame {
         });
 
         number2.setText("2");
+        number2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                number2ActionPerformed(evt);
+            }
+        });
 
         number3.setText("3");
+        number3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                number3ActionPerformed(evt);
+            }
+        });
 
         number4.setText("4");
+        number4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                number4ActionPerformed(evt);
+            }
+        });
 
         number5.setText("5");
+        number5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                number5ActionPerformed(evt);
+            }
+        });
 
         number6.setText("6");
+        number6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                number6ActionPerformed(evt);
+            }
+        });
 
         number7.setText("7");
+        number7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                number7ActionPerformed(evt);
+            }
+        });
 
         number8.setText("8");
         number8.addActionListener(new java.awt.event.ActionListener() {
@@ -78,6 +109,11 @@ public class Calculator extends javax.swing.JFrame {
         });
 
         number9.setText("9");
+        number9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                number9ActionPerformed(evt);
+            }
+        });
 
         decimal.setText(".");
         decimal.addActionListener(new java.awt.event.ActionListener() {
@@ -87,6 +123,11 @@ public class Calculator extends javax.swing.JFrame {
         });
 
         number0.setText("0");
+        number0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                number0ActionPerformed(evt);
+            }
+        });
 
         equal.setText("=");
 
@@ -242,15 +283,77 @@ public class Calculator extends javax.swing.JFrame {
 
     private void number1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_number1ActionPerformed
         // TODO add your handling code here:
+       
+         input=input+1;  
+         
+         numberInput.setText(String.valueOf (input));
     }//GEN-LAST:event_number1ActionPerformed
 
     private void number8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_number8ActionPerformed
         // TODO add your handling code here:
+        input=input+8;  
+         
+         numberInput.setText(String.valueOf (input));
     }//GEN-LAST:event_number8ActionPerformed
 
     private void clearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_clearActionPerformed
+
+    private void number2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_number2ActionPerformed
+input=input+2;  
+         
+         numberInput.setText(String.valueOf (input));        // TODO add your handling code here:
+    }//GEN-LAST:event_number2ActionPerformed
+
+    private void number3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_number3ActionPerformed
+        // TODO add your handling code here:
+        input=input+3;  
+         
+         numberInput.setText(String.valueOf (input));
+    }//GEN-LAST:event_number3ActionPerformed
+
+    private void number4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_number4ActionPerformed
+        // TODO add your handlig code here:
+        input=input+4;  
+         
+         numberInput.setText(String.valueOf (input));
+    }//GEN-LAST:event_number4ActionPerformed
+
+    private void number5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_number5ActionPerformed
+        // TODO add your handling code here:
+        input=input+5;  
+         
+         numberInput.setText(String.valueOf (input));
+    }//GEN-LAST:event_number5ActionPerformed
+
+    private void number6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_number6ActionPerformed
+        // TODO add your handling code here:
+        input=input+6;  
+         
+         numberInput.setText(String.valueOf (input));
+    }//GEN-LAST:event_number6ActionPerformed
+
+    private void number7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_number7ActionPerformed
+        // TODO add your handling code here:
+        input=input+7;  
+         
+         numberInput.setText(String.valueOf (input));
+    }//GEN-LAST:event_number7ActionPerformed
+
+    private void number9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_number9ActionPerformed
+        // TODO add your handling code here:
+        input=input+9;  
+         
+         numberInput.setText(String.valueOf (input));
+    }//GEN-LAST:event_number9ActionPerformed
+
+    private void number0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_number0ActionPerformed
+        // TODO add your handling code here:
+        input=input+0;  
+         
+         numberInput.setText(String.valueOf (input));
+    }//GEN-LAST:event_number0ActionPerformed
 
     /**
      * @param args the command line arguments
