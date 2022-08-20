@@ -13,7 +13,8 @@ public class Calculator extends javax.swing.JFrame {
     /**
      * Creates new form Calculator
      */
-    public String input ="";
+    public String input = "";
+
     public Calculator() {
         initComponents();
     }
@@ -299,112 +300,96 @@ public class Calculator extends javax.swing.JFrame {
 
     private void decimalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_decimalActionPerformed
         // TODO add your handling code here:
-        input=input+".";  
-         
-         numberInput.setText(String.valueOf (input));
+        input = input + ".";
+        numberInput.setText(String.valueOf(input));
     }//GEN-LAST:event_decimalActionPerformed
 
     private void number1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_number1ActionPerformed
         // TODO add your handling code here:
-       
-         input=input+1;  
-         
-         numberInput.setText(String.valueOf (input));
+        input = input + 1;
+        numberInput.setText(String.valueOf(input));
     }//GEN-LAST:event_number1ActionPerformed
 
     private void number8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_number8ActionPerformed
         // TODO add your handling code here:
-        input=input+8;  
-         
-         numberInput.setText(String.valueOf (input));
+        input = input + 8;
+        numberInput.setText(String.valueOf(input));
     }//GEN-LAST:event_number8ActionPerformed
 
     private void clearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearActionPerformed
         // TODO add your handling code here:
-        input="";
-        numberInput.setText(String.valueOf (input));
+        input = "";
+        numberInput.setText(String.valueOf(input));
     }//GEN-LAST:event_clearActionPerformed
 
     private void number2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_number2ActionPerformed
-input=input+2;  
-         
-         numberInput.setText(String.valueOf (input));        // TODO add your handling code here:
+        input = input + 2;
+        numberInput.setText(String.valueOf(input));        // TODO add your handling code here:
     }//GEN-LAST:event_number2ActionPerformed
 
     private void number3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_number3ActionPerformed
         // TODO add your handling code here:
-        input=input+3;  
-         
-         numberInput.setText(String.valueOf (input));
+        input = input + 3;
+        numberInput.setText(String.valueOf(input));
     }//GEN-LAST:event_number3ActionPerformed
 
     private void number4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_number4ActionPerformed
         // TODO add your handlig code here:
-        input=input+4;  
-         
-         numberInput.setText(String.valueOf (input));
+        input = input + 4;
+        numberInput.setText(String.valueOf(input));
     }//GEN-LAST:event_number4ActionPerformed
 
     private void number5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_number5ActionPerformed
         // TODO add your handling code here:
-        input=input+5;  
-         
-         numberInput.setText(String.valueOf (input));
+        input = input + 5;
+        numberInput.setText(String.valueOf(input));
     }//GEN-LAST:event_number5ActionPerformed
 
     private void number6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_number6ActionPerformed
         // TODO add your handling code here:
-        input=input+6;  
-         
-         numberInput.setText(String.valueOf (input));
+        input = input + 6;
+        numberInput.setText(String.valueOf(input));
     }//GEN-LAST:event_number6ActionPerformed
 
     private void number7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_number7ActionPerformed
         // TODO add your handling code here:
-        input=input+7;  
-         
-         numberInput.setText(String.valueOf (input));
+        input = input + 7;
+        numberInput.setText(String.valueOf(input));
     }//GEN-LAST:event_number7ActionPerformed
 
     private void number9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_number9ActionPerformed
         // TODO add your handling code here:
-        input=input+9;  
-         
-         numberInput.setText(String.valueOf (input));
+        input = input + 9;
+        numberInput.setText(String.valueOf(input));
     }//GEN-LAST:event_number9ActionPerformed
 
     private void number0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_number0ActionPerformed
         // TODO add your handling code here:
-        input=input+0;  
-         
-         numberInput.setText(String.valueOf (input));
+        input = input + 0;
+        numberInput.setText(String.valueOf(input));
     }//GEN-LAST:event_number0ActionPerformed
 
     private void plusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plusActionPerformed
         // TODO add your handling code here:
-        input=input+"+";  
-         
-         numberInput.setText(String.valueOf (input));
+        input = input + "+";
+        numberInput.setText(String.valueOf(input));
     }//GEN-LAST:event_plusActionPerformed
 
     private void minusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minusActionPerformed
-input=input+"-";  
-         
-         numberInput.setText(String.valueOf (input));        // TODO add your handling code here:
+        input = input + "-";
+        numberInput.setText(String.valueOf(input));        // TODO add your handling code here:
     }//GEN-LAST:event_minusActionPerformed
 
     private void multiplyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_multiplyActionPerformed
         // TODO add your handling code here:
-        input=input+"×";  
-         
-         numberInput.setText(String.valueOf (input));
+        input = input + "×";
+        numberInput.setText(String.valueOf(input));
     }//GEN-LAST:event_multiplyActionPerformed
 
     private void divideActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_divideActionPerformed
         // TODO add your handling code here:
-        input=input+"÷";  
-         
-         numberInput.setText(String.valueOf (input));
+        input = input + "÷";
+        numberInput.setText(String.valueOf(input));
     }//GEN-LAST:event_divideActionPerformed
 
     /**
