@@ -298,6 +298,8 @@ public class Calculator extends javax.swing.JFrame {
 
     private void clearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearActionPerformed
         // TODO add your handling code here:
+        input="";
+        numberInput.setText(String.valueOf (input));
     }//GEN-LAST:event_clearActionPerformed
 
     private void number2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_number2ActionPerformed
