@@ -175,13 +175,33 @@ public class Calculator extends javax.swing.JFrame {
             }
         });
 
-        multiply.setText("x");
+        multiply.setText("×");
+        multiply.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                multiplyActionPerformed(evt);
+            }
+        });
 
         divide.setText("÷");
+        divide.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                divideActionPerformed(evt);
+            }
+        });
 
         minus.setText("-");
+        minus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                minusActionPerformed(evt);
+            }
+        });
 
         plus.setText("+");
+        plus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                plusActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -356,6 +376,33 @@ input=input+2;
          
          numberInput.setText(String.valueOf (input));
     }//GEN-LAST:event_number0ActionPerformed
+
+    private void plusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_plusActionPerformed
+        // TODO add your handling code here:
+        input=input+"+";  
+         
+         numberInput.setText(String.valueOf (input));
+    }//GEN-LAST:event_plusActionPerformed
+
+    private void minusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minusActionPerformed
+input=input+"-";  
+         
+         numberInput.setText(String.valueOf (input));        // TODO add your handling code here:
+    }//GEN-LAST:event_minusActionPerformed
+
+    private void multiplyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_multiplyActionPerformed
+        // TODO add your handling code here:
+        input=input+"×";  
+         
+         numberInput.setText(String.valueOf (input));
+    }//GEN-LAST:event_multiplyActionPerformed
+
+    private void divideActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_divideActionPerformed
+        // TODO add your handling code here:
+        input=input+"÷";  
+         
+         numberInput.setText(String.valueOf (input));
+    }//GEN-LAST:event_divideActionPerformed
 
     /**
      * @param args the command line arguments
