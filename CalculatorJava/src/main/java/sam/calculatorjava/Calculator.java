@@ -299,6 +299,9 @@ public class Calculator extends javax.swing.JFrame {
 
     private void decimalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_decimalActionPerformed
         // TODO add your handling code here:
+        input=input+".";  
+         
+         numberInput.setText(String.valueOf (input));
     }//GEN-LAST:event_decimalActionPerformed
 
     private void number1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_number1ActionPerformed
