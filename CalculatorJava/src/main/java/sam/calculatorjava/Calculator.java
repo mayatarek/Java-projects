@@ -14,6 +14,7 @@ public class Calculator extends javax.swing.JFrame {
      * Creates new form Calculator
      */
     public String input ="";
+    public String output ="";
     public Calculator() {
         initComponents();
     }
@@ -130,6 +131,11 @@ public class Calculator extends javax.swing.JFrame {
         });
 
         equal.setText("=");
+        equal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                equalActionPerformed(evt);
+            }
+        });
 
         SAM.setText("SAM");
 
@@ -406,6 +412,13 @@ input=input+"-";
          
          numberInput.setText(String.valueOf (input));
     }//GEN-LAST:event_divideActionPerformed
+
+    private void equalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_equalActionPerformed
+        // TODO add your handling code here:
+        String str = input;
+                String[] arrOfStr = str.split("-");
+        numberOutput.setText(String.valueOf (output));
+    }//GEN-LAST:event_equalActionPerformed
 
     /**
      * @param args the command line arguments
